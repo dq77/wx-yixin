@@ -1,0 +1,60 @@
+/* pages/erbao/erbao.wxss */
+page{
+  min-height: 100%;
+  background-color: #FBF9FE;
+}
+.erbao,.talkList,.page-section{
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  background-color: #FFF;
+  font-size: 16px;
+  margin: 15px 15px 40px;
+  padding: 10px;
+  box-shadow: 0 0 10px #CCC;
+}
+.erbao .title{
+  font-size: 22px;
+}
+.erbao .date{
+  color: #CCC;
+  margin: 15px 0;
+}
+.body{
+  line-height: 28px;
+  color: #333;
+  font-size: 16px;
+}
+.body .content{
+  text-indent:32px
+}
+.body .imgView{
+  margin: 10px 0 15px;
+}
+.body .date{
+  color: #CCC;
+  margin: 15px 0 0;
+  text-align: right;
+}
+.talkItem{
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 10px;
+}
+.sendView{
+  padding: 4px 15px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.sendView .sendBtn{
+  margin: 0;
+}
+.page-section{
+  color: #666;
+  margin-bottom: 5px;
+}
+.talkItem .name{
+  color: #666;
+  font-size: 14px;
+}
+.talkItem .content{
+  padding: 5px 0;
+}

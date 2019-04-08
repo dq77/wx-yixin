@@ -1,0 +1,44 @@
+/* pages/chengyu/chengyu.wxss */
+page{
+  min-height: 100%;
+  background-color: #FBF9FE;
+}
+.history{
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  flex: 1;
+  font-size: 16px;
+}
+.head{
+  padding: 40px 40px 10px;
+  font-size: 30px;
+}
+.body{
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+}
+.loadtext{
+  padding: 40px 0;
+  text-align: center;
+}
+.cy-card{
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.cy-card .text{
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.cy-card .content{
+  color: #AAA;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.cy-card .content .info{
+  color: #333;
+}

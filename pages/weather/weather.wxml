@@ -1,0 +1,35 @@
+<!--pages/weather.wxml-->
+<view class="weather">
+  <view class="head">
+    <text>天气预报</text>
+  </view>
+
+  <view class="body">
+    <picker class='cityPicker' bindchange="bindPickerChange" value="{{selectCity}}" range="{{cityList}}">
+      <view class="picker"> 当前城市： {{cityList[selectCity]}} </view>
+    </picker>
+    <view class='loadtext' wx:if="{{newsList.length == 0}}">加载中... ...</view>
+    <view class='nowWeather'>
+      <view wx:if="{{weatherInfo.temperature}}" class='templete'><text>{{weatherInfo.temperature}}</text> ℃</view>
+      <view class='info'>{{weatherInfo.info}}</view>
+      <view class='direct'>{{weatherInfo.direct}} {{weatherInfo.power}}</view>
+      <view wx:if="{{weatherInfo.aqi}}" class='direct'>空气质量 {{weatherInfo.aqi}}</view>
+      <view wx:if="{{!weatherInfo.temperature}}" class='direct'>暂无数据</view>
+    </view>
+    <view class='futureList'>
+      <view wx:for="{{futureList}}" wx:key="index" class='weatherCard'>
+        <view>{{item.date[1]}}/{{item.date[2]}}</view>
+        <view class="weather"><text>{{item.weather}}</text></view>
+        <view class='templte'>{{item.temperature[1]}}℃</view>
+        <view>|</view>
+        <view class='templte'>{{item.temperature[0]}}℃</view>
+        <view>东南风</view>
+        <view>3级</view>
+      </view>
+    </view>
+
+    <view class="moreLoad" wx:if="{{moreLoad}}">
+      <text>加载中......</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+page{
+  height: 100%;
+}
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 16px;
+}
+.head{
+    padding: 40px;
+}
+.login-btn{
+  margin-top: 6px;
+  margin-bottom: -35px;
+}
+.body{
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.title{
+    font-size: 30px;
+}
+.avatar{
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+.widgets__item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.widgets__info{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+.widgets__info-name{
+    flex: 1;
+}
+.widgets__info-img{
+    width: 30px;
+    height: 30px;
+}

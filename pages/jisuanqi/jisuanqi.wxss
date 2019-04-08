@@ -1,0 +1,48 @@
+/* pages/jisuanqi/jisuanqi.wxss */
+Page {
+  background: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.numTop{
+  height: 40%;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.numTop .area{
+  margin: 0 40rpx 30rpx 0;
+  text-align: right;
+  font-size: 70rpx;
+  color: #181818;
+}
+.numTab{
+  background-color: #FFF;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.numTab .nea{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.nea .tea{
+  flex-grow: 1;
+  border-top: 1px solid #C3C5C6;
+  border-right: 1px solid #C3C5C6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4F5157;
+  font-size: 50rpx;
+}
+.nea .tea:active{
+  background-color: #E0E1E2;
+}
+.tea.equal{
+  background-color: #FB7730;
+  color: #FFF;
+}

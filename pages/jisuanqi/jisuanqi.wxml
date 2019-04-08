@@ -1,0 +1,28 @@
+<!--pages/jisuanqi/jisuanqi.wxml-->
+<view class="numTop">
+  <view wx:if="{{num2&& (v)}}" class='area input'>{{num2}}</view>
+  <view wx:if="{{(num !=='' && (!v)) || (num !=='' && v && (!num2))}}" class='area input'>{{num}}</view>
+  <view wx:if="{{equal}}" class='area output'>{{equal}}</view>
+</view>
+<view class="numTab">
+  <view class='nea'><view class='tea' bindtap="clear">AC</view></view>
+  <view class='nea'><view class='tea' bindtap="back">←</view></view>
+  <view class='nea'><view class='tea' bindtap="clear">%</view></view>
+  <view class='nea'><view class='tea' bindtap="calcu">/</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">7</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">8</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">9</view></view>
+  <view class='nea'><view class='tea' bindtap="calcu">*</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">4</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">5</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">6</view></view>
+  <view class='nea'><view class='tea' bindtap="calcu">-</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">1</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">2</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">3</view></view>
+  <view class='nea'><view class='tea' bindtap="calcu">+</view></view>
+  <view class='nea'><view class='tea' bindtap="clear"> </view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">0</view></view>
+  <view class='nea'><view class='tea' bindtap="numFn">.</view></view>
+  <view class='nea'><view class='tea equal' bindtap="equFn">=</view></view>
+</view>

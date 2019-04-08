@@ -1,0 +1,74 @@
+<!--pages/erbao/erbao.wxml-->
+<view class="erbao">
+  <view class="title">
+    <text>蘑菇街蘑菇美女今日出门迷倒一群男性朋友</text>
+  </view>
+  <view class="date">
+    <text>2019-02-26 16:50:00</text>
+  </view>
+
+  <view class="body">
+    <view class="content">
+      <text>蘑菇街蘑菇美女今日出门迷倒一群男性朋友，此美女低调说不愿意透露姓名，留下一张照片，一群人哄抢撕的稀巴碎。高强度PS复原如下</text>
+    </view>
+    <view class="imgView">
+      <image class='img' mode="widthFix" src="../../image/erbao/hezhao.jpg"></image>
+    </view>
+    <view class="content">
+      <text>此照片一惊公布，广大群众表示接受不了，蘑菇美女眼睛可能瞎了。</text>
+    </view>
+    <view class="content">
+      <text>不过蘑菇美女表示自己很幸福，让我们祝福她们。</text>
+    </view>
+    <view class="content"><text>　</text></view>
+    <view class="content">
+      <text>近日杭州市民刁先生称自己日日不能入睡，白天哈欠连天。吃不好饭，睡不好觉。去医院调查原来是患了相思病，迫切想见到他的女朋友蘑菇美女……</text>
+    </view>
+    <view class="content">
+      <text>现在我们来连线一下蘑菇美女......</text>
+    </view>
+    <view class="imgView">
+      <image class='img' mode="widthFix" src="../../image/erbao/phone.jpg"></image>
+    </view>
+    <view class="content">
+      <text>蘑菇美女的助理说她今天没有时间接电话，让这位刁先生改日再聊。</text>
+    </view>
+    <view class="content">
+      <text>气的刁先生当日吐血。</text>
+    </view>
+    <view class="content">
+      <text>吓坏了同事，到了医院才发现是番茄酱吃多了。上吐下泻，经记者奋力调查发现。刁先生到底吃了哪家的番茄酱那么好吃呢？</text>
+    </view>
+    <view class="content">
+      <text>让我们明日揭晓......</text>
+    </view>
+    <view class="content"><text>　</text></view>
+    <view class="content">
+      <text>情人节当日蘑菇美女未敢出街，在家实在无聊。决定披了一件狗皮貂绒出街，刚踏出小区瞬间引起轰动。大家都想把这条狗带回家领养</text>
+    </view>
+    <view class="date">
+      <text>2019-02-26 16:50:00 本报讯</text>
+    </view>
+  </view>
+</view>
+<form bindsubmit='fabiao'>
+  <view class="page-section">
+    <view class="textarea-wrp">
+      <textarea auto-focus="true" value='{{concent}}' bindblur='bindTextAreaBlur' placeholder="说点什么吧：" style="height: 3em" />
+    </view>
+  </view>
+  <view class='sendView'>
+    <button class='sendBtn' type="primary" size="mini" form-type="submit"> 发布 </button>
+  </view>
+</form>
+<view class='talkList'>
+  <view>
+    <text>网友热评：</text>
+  </view>
+  <view class='talkItem' wx:for="{{talkList}}" wx:key="index" >
+    <view class='name'>{{item.num}}楼： {{item.name}}</view>
+    <view class='content'>
+      <text>{{item.cont}}</text>
+    </view>
+  </view>
+</view>

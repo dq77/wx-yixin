@@ -1,0 +1,17 @@
+<view class="page-body">
+  <view class="page-section-gap">
+    <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" show-location>
+      <cover-view class="cover-view">
+        <cover-view class='one-cover' data-bean="1" bindtap="changeView">
+          <cover-image class="tolocal-img" src="/image/map/add.png" />
+        </cover-view>
+        <cover-view class='one-cover' data-bean="2" bindtap="changeView">
+          <cover-image class="tolocal-img" src="/image/map/sub.png" />
+        </cover-view>
+        <cover-view class='one-cover' bindtap="getMyLocation">
+          <cover-image class="tolocal-img" src="/image/map/locate.png" />
+        </cover-view>
+      </cover-view>
+    </map>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+/* pages/weather.wxss */
+page{
+  min-height: 100%;
+  background-color: #FBF9FE;
+}
+.weather{
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  flex: 1;
+  font-size: 16px;
+}
+.head{
+  padding: 40px 40px 10px;
+  font-size: 30px;
+}
+.body{
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+}
+.loadtext{
+  padding: 40px 0;
+  text-align: center;
+}
+.cityPicker{
+  margin: 10px 0;
+  background-color: #FFF;
+  padding: 10px;
+  box-shadow:  0 0 10px #AAA;
+}
+.nowWeather{
+  background-color: #FFF;
+  margin-top: 15px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #EEE;
+}
+.nowWeather .templete{
+  padding: 5px 0 0;
+}
+.nowWeather .templete text{
+  font-size: 60px;
+}
+.nowWeather .info{
+  margin: 10px 0;
+}
+.futureList{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid #EEE;
+}
+.futureList .weatherCard{
+  width: 20%;
+  background-color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px 0;
+  border: 1px solid #EEE;
+  border-left: 0;
+  flex-grow: 1;
+}
+.futureList .weatherCard .templte{
+  margin: 15px 0;
+}
+.futureList .weatherCard .weather{
+  font-size: 14px;
+  display: flex;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+
+}

@@ -1,0 +1,22 @@
+<!--pages/chengyu/chengyu.wxml-->
+<view class="chengyu">
+  <view class="head">
+    <!-- <text>成语查询</text> -->
+  </view>
+
+  <view class="body">
+    <view class="section">
+      <input class='cy-card' placeholder="请输入成语" bindblur="getInfo" auto-focus />
+    </view>
+    <view class='loadtext' wx:if="{{loadtext}}">加载中... ...</view>
+    <view class='cy-card' wx:if="{{cyInfo.pinyin}}">
+      <view class='text'>{{text}}</view>
+      <view class='content'>拼音：<text class='info'>{{cyInfo.pinyin}}</text></view>
+      <view class='content'>解释：<text class='info'>{{cyInfo.chengyujs}}</text></view>
+      <view class='content'>来源：<text class='info'>{{cyInfo.from_}}</text></view>
+      <view class='content'>例句：<text class='info'>{{cyInfo.example}}</text></view>
+      <view class='content'>同义词：<text class='info'>{{cyInfo.tongyi}}</text></view>
+      <view class='content'>反义词：<text class='info'>{{cyInfo.fanyi}}</text></view>
+    </view>
+  </view>
+</view>
