@@ -27,7 +27,7 @@
       <view class="widgets__item">
         <navigator url="../jisuanqi/jisuanqi" id="view" class="widgets__info">
           <text class="widgets__info-name">意新计算器</text>
-          <image class="widgets__info-img" src="../../resources/kind/nav.png" background-size="cover" />
+          <image class="widgets__info-img" src="../../resources/kind/map.png" background-size="cover" />
         </navigator>
       </view>
       <view class="widgets__item">
