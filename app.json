@@ -44,5 +44,6 @@
   "debug": true,
   "navigateToMiniProgramAppIdList": [
     "wxe5f52902cf4de896"
-  ]
+  ],
+  "sitemapLocation": "sitemap.json"
 }
