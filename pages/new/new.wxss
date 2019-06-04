@@ -1,0 +1,38 @@
+/* pages/new/new.wxss */
+page{
+  min-height: 100%;
+  background-color: #FBF9FE;
+}
+.head{
+  padding: 40px 40px 10px;
+  font-size: 30px;
+}
+.body{
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+}
+.body .itembox{
+  border: 1px solid #f0f0f0;
+  color: #333;
+  margin: 30rpx;
+  padding: 30rpx 30rpx 10rpx;
+  background-color: #FFF;
+  font-size: 28rpx;
+}
+.body .empty{
+  height: 200px;
+  padding-bottom: 30rpx;
+  line-height: 80px;
+  text-align: center;
+}
+.body .imgbox{
+  display: flex;
+  justify-content: space-between;
+}
+.body .newInfo{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #999;
+}

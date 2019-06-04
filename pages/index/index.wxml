@@ -18,6 +18,12 @@
           <image class="widgets__info-img" src="../../resources/kind/content.png" background-size="cover" />
         </navigator>
       </view>
+      <view class="widgets__item" wx-if="{{isCheck === false}}">
+        <view class="widgets__info">
+          <text class="widgets__info-name" bindtap="navigate">{{newTitle}}</text>
+          <image class="widgets__info-img" src="../../resources/kind/form.png" background-size="cover" />
+        </view>
+      </view>
       <view wx:if="{{erbaoShow == true}}" class="widgets__item">
         <navigator url="../erbao/erbao" id="view" class="widgets__info">
           <text class="widgets__info-name">意新二宝头条</text>

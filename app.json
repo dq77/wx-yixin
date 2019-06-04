@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/new/new",
     "pages/map/map",
     "pages/erbao/erbao",
     "pages/weather/weather",

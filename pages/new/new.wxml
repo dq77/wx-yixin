@@ -1,0 +1,28 @@
+<!--pages/new/new.wxml-->
+<view class="new">
+  <view class="head">
+    <text wx:if='{{isCheck == "false"}}'>新闻头条</text>
+    <text wx:if='{{isCheck == "true"}}'>敬请期待</text>
+  </view>
+
+  <view class="body">
+    <view wx:if='{{isCheck == "true"}}' class='itembox empty'>
+      更多功能开发中，敬请期待......
+      <navigator url="../index/index">
+        <text>点击回到首页</text>
+      </navigator>
+    </view>
+    <view class='itembox' wx:for='{{newInfo}}' wx:key='{{item.uniquekey}}' data-url='{{item.url}}' bindtap='openChatView'>
+      <text>{{item.title}}</text>
+      <view class='imgbox'>
+          <image wx:if='{{item.thumbnail_pic_s}}' style="width: 30%;height: 70px" mode='aspectFit' src='{{item.thumbnail_pic_s}}'></image>
+          <image wx:if='{{item.thumbnail_pic_s02}}' style="width: 30%;height: 70px" mode='aspectFit' src='{{item.thumbnail_pic_s02}}'></image>
+          <image wx:if='{{item.thumbnail_pic_s03}}' style="width: 30%;height: 70px" mode='aspectFit' src='{{item.thumbnail_pic_s03}}'></image>
+      </view>
+      <view class='newInfo'>
+        <text>{{item.author_name}}</text>
+        <text>{{item.date}}</text>
+      </view>
+    </view>
+  </view>
+</view>
